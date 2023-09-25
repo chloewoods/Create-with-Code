@@ -19,7 +19,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Users/cmwoo/GitHub/Create with Code 1/Prototype 1/WebGL Builds;;;;;;;;;\"}"
+                "value": "{\"m_Value\":\"C:/Users/cmwoo/Games/Create with Code Challenge;C:/Users/cmwoo/Games;C:/Users/cmwoo/GitHub/Create with Code 1/Prototype 1/WebGL Builds;;;;;;;\"}"
             }
         ]
     }

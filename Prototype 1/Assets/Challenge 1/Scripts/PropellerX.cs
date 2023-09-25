@@ -16,6 +16,7 @@ public class PropellerX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Rotate propeller around z axis
         transform.Rotate(rotationDirection * rotationSpeed * Time.deltaTime);
     }
 }

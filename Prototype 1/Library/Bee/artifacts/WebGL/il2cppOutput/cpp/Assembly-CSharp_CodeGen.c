@@ -12,6 +12,15 @@
 
 
 
+extern void FollowPlayerX_Start_mE73AEAF1AE3395058DDD44681F9CC519DD2692F6 (void);
+extern void FollowPlayerX_LateUpdate_m15523C56D1F2DC3E7452BEB6B189E6E580E8168E (void);
+extern void FollowPlayerX__ctor_m95820EBAEB39F06210CD082F86E5B37AFDCB3ECE (void);
+extern void PlayerControllerX_Start_m5BAE410291E1DABAC99D3F233D14AF0AA072A606 (void);
+extern void PlayerControllerX_Update_mE690DFA5B4D44A839AC48EC903E382790B5CCC8B (void);
+extern void PlayerControllerX__ctor_m3FFA731641AD6FA1CE627820042B7587E98D535A (void);
+extern void PropellerX_Start_m96E89C5A7E18F5F7F567AFCECCADF2D4243234A0 (void);
+extern void PropellerX_Update_m31E61C42E07B340A3A1636332366BAB19A000066 (void);
+extern void PropellerX__ctor_m215BAC70095ACEC9F9900227CF1B4C0536AFA467 (void);
 extern void FollowPlayer_Start_m138697E0740DB2570074B2DB69AE32AF46A994F9 (void);
 extern void FollowPlayer_Update_m6CCD681461C8062489A435B45285AEE84F3B3DB6 (void);
 extern void FollowPlayer_LateUpdate_m69B79F77CFC8072526CE0BA2D71179F66AE15B70 (void);
@@ -24,8 +33,17 @@ extern void PlayerController_Update_m1F4051EB5BCBCCE5EEE2E3E49B7E278C3B14EC33 (v
 extern void PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[12] = 
+static Il2CppMethodPointer s_methodPointers[21] = 
 {
+	FollowPlayerX_Start_mE73AEAF1AE3395058DDD44681F9CC519DD2692F6,
+	FollowPlayerX_LateUpdate_m15523C56D1F2DC3E7452BEB6B189E6E580E8168E,
+	FollowPlayerX__ctor_m95820EBAEB39F06210CD082F86E5B37AFDCB3ECE,
+	PlayerControllerX_Start_m5BAE410291E1DABAC99D3F233D14AF0AA072A606,
+	PlayerControllerX_Update_mE690DFA5B4D44A839AC48EC903E382790B5CCC8B,
+	PlayerControllerX__ctor_m3FFA731641AD6FA1CE627820042B7587E98D535A,
+	PropellerX_Start_m96E89C5A7E18F5F7F567AFCECCADF2D4243234A0,
+	PropellerX_Update_m31E61C42E07B340A3A1636332366BAB19A000066,
+	PropellerX__ctor_m215BAC70095ACEC9F9900227CF1B4C0536AFA467,
 	FollowPlayer_Start_m138697E0740DB2570074B2DB69AE32AF46A994F9,
 	FollowPlayer_Update_m6CCD681461C8062489A435B45285AEE84F3B3DB6,
 	FollowPlayer_LateUpdate_m69B79F77CFC8072526CE0BA2D71179F66AE15B70,
@@ -39,7 +57,7 @@ static Il2CppMethodPointer s_methodPointers[12] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[12] = 
+static const int32_t s_InvokerIndices[21] = 
 {
 	1115,
 	1115,
@@ -51,14 +69,23 @@ static const int32_t s_InvokerIndices[12] =
 	1115,
 	1115,
 	1115,
-	2151,
+	1115,
+	1115,
+	1115,
+	1115,
+	1115,
+	1115,
+	1115,
+	1115,
+	1115,
+	2154,
 	1115,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	12,
+	21,
 	s_methodPointers,
 	0,
 	NULL,
