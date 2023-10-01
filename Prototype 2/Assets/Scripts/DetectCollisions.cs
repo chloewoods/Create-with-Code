@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,15 @@ public class DetectCollisions : MonoBehaviour
     //Method to destroy objects when they collide
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
-        Destroy(other.gameObject);
+        if (other.CompareTag("Food"))
+        {
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+        }
+        else if (gameObject.CompareTag("Agressive"))
+        {
+            Debug.Log("Game Over due to Moose");
+        }
+        
     }
 }

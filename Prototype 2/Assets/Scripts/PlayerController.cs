@@ -6,8 +6,11 @@ public class PlayerController : MonoBehaviour
 {
     //Declare variables
     private float horizontalInput;
+    private float verticalInput;
     private float speed = 25.0f;
     private float xRange = 15.0f;
+    private float zTopRange = 15.0f;
+    private float zLowerRange = 0;
 
     public GameObject projectilePrefab;
 
@@ -31,13 +34,26 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
 
-        //Read in player horizontal input
+        if (transform.position.z < zLowerRange)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, zLowerRange);
+        }
+
+        if (transform.position.z > zTopRange)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, zTopRange);
+        }
+
+        //Read in player inputs
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
 
+        verticalInput = Input.GetAxis("Vertical");
+        transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
+
+        //Launch a projectile from the player when space pressed
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            //Launch a projectile from the player
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
     }
