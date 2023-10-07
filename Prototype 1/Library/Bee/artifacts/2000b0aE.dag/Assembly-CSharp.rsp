@@ -337,6 +337,7 @@
 "Assets/Challenge 1/Scripts/FollowPlayerX.cs"
 "Assets/Challenge 1/Scripts/PlayerControllerX.cs"
 "Assets/Challenge 1/Scripts/PropellerX.cs"
+"Assets/Scripts/Buttons.cs"
 "Assets/Scripts/FollowPlayer.cs"
 "Assets/Scripts/OtherVehicles.cs"
 "Assets/Scripts/PlayerController.cs"
