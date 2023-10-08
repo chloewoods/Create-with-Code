@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
         //Creating a reference to rigidbody
         playerRb = GetComponent<Rigidbody>();
         Physics.gravity *= gravityModifier;
-
+        //Adding Animation and Audio components
         playerAnim = GetComponent<Animator>();
         playerAudio = GetComponent<AudioSource>();
     }
@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
+            //Effects
             playerAudio.PlayOneShot(jumpSound, 1f);
             playerAnim.SetTrigger("Jump_trig");
             dirtParticle.Stop();
@@ -49,11 +50,14 @@ public class PlayerController : MonoBehaviour
             isOnGround = true;
             dirtParticle.Play();
         }
-        else if (collision.gameObject.CompareTag("Obstacle"))
+        else if (collision.gameObject.CompareTag("Obstacle")) //If player hits obstacle, game over state
         {
+            //Game Over state
             Debug.Log("Game Over");
             gameOver = true;
+            //Audio to play
             playerAudio.PlayOneShot(crashSound, 1f);
+            //Particle and Sound effects
             dirtParticle.Stop();
             explosionParticle.Play();
             playerAnim.SetBool("Death_b", true);
