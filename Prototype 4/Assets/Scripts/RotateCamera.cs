@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RotateCamera : MonoBehaviour
 {
-    public float rotationSpeed = 50;
+    public float rotationSpeed = 75;
     // Start is called before the first frame update
     void Start()
     {
