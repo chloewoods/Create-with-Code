@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 3;
+    public float speed = 2;
     private Rigidbody playerRb;
     private GameObject focalPoint;
     public bool hasPowerup = false;
-    public float powerupStrength = 10;
+    public float powerupStrength = 20;
     public float powerupLength = 5;
     public GameObject powerupIndicator;
 
