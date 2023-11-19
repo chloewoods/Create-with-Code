@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+    
     public GameObject enemyPrefab;
     public GameObject powerupPrefab;
     private float spawnRange = 8.5f;
